@@ -29,7 +29,7 @@ pipeline {
         branch 'main'
       }
       steps {
-        sh 'this is deploy-prod stage'
+        echo "this is deploy-prod stage. My branch is : ${env.BRANCH_NAME}"
       }
     }
   }
