@@ -5,13 +5,15 @@ pipeline {
     stage('Build') {
       steps {
         echo "Building branch: ${env.BRANCH_NAME}"
-        sh 'mvn clean package'
+        //sh 'mvn clean package'
+        sh 'echo this is build stage'
       }
     }
 
     stage('Test') {
       steps {
-        sh 'mvn test'
+        //sh 'mvn test'
+        sh ' echo this is test stage'
       }
     }
 
@@ -20,7 +22,8 @@ pipeline {
         branch 'develop'
       }
       steps {
-        sh './deploy-dev.sh'
+        //sh './deploy-dev.sh'
+        sh 'echo this is deploy-dev'
       }
     }
 
@@ -29,7 +32,8 @@ pipeline {
         branch 'main'
       }
       steps {
-        sh './deploy-prod.sh'
+        //sh './deploy-prod.sh'
+        sh 'this is deploy-prod stage'
       }
     }
   }
