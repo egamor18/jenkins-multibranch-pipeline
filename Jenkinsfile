@@ -1,5 +1,11 @@
 pipeline {
   agent any
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> b8792f524edd7e53dbf134607dba481db7540945
   stages {
     stage('Build') {
       steps {
