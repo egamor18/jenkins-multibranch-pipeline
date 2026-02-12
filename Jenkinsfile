@@ -2,7 +2,7 @@ pipeline {
   agent any
   // will this work?
   //adding another line
- // from bare. worktree
+ // testing trigger from github
   stages {
     stage('Build') {
       steps {
