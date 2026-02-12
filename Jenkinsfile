@@ -2,6 +2,7 @@ pipeline {
   agent any
   // will this work?
   //adding another line
+ // from bare. worktree
   stages {
     stage('Build') {
       steps {
